@@ -4,6 +4,8 @@ import { services } from "../data/services";
 export const site = {
     name: "Philadelphia Plumbing Services",
 
+    url: "https://philadelphiaplumbingservices.com",
+
     shortName: "PPS",
 
     phone: "(215) 555-1234",

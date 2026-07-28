@@ -16,6 +16,7 @@ import Footer from "@/app/components/layout/Footer";
 import RelatedServices from "@/app/components/services/RelatedServices";
 import ServiceCallout from "@/app/components/services/ServiceCallout";
 import ServiceAreas from "@/app/components/services/ServiceAreas";
+import ServiceSchema from "@/app/components/services/ServiceSchema";
 
 export async function generateMetadata({
     params,
@@ -30,9 +31,40 @@ export async function generateMetadata({
     }
 
     return {
+    title: service.seoTitle,
+
+    description: service.metaDescription,
+
+    alternates: {
+        canonical: `https://philadelphiaplumbingservices.com/services/${service.slug}`,
+    },
+
+    openGraph: {
+        title: service.seoTitle,
+
+        description: service.metaDescription,
+
+        url: `https://philadelphiaplumbingservices.com/services/${service.slug}`,
+
+        type: "website",
+
+        images: [
+            {
+                url: service.image,
+                width: 1200,
+                height: 630,
+                alt: service.heroImageAlt,
+            },
+        ],
+    },
+
+    twitter: {
+        card: "summary_large_image",
         title: service.seoTitle,
         description: service.metaDescription,
-    };
+        images: [service.image],
+    },
+};
 }
 
 export function generateStaticParams() {
@@ -64,6 +96,7 @@ export default async function ServicePage({
     return (
 
        <>
+       <ServiceSchema service={service} />
     <Navbar />
 
     <ServiceHero service={service} />
