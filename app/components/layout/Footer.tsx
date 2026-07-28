@@ -1,0 +1,232 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import Container from "../ui/Container";
+import Button from "../ui/Button";
+import { site } from "@/lib/config/site";
+
+export default function Footer() {
+  return (
+    <footer className="bg-gradient-to-b from-[#123B63] to-[#0C2742] text-white">
+
+      {/* CTA */}
+        <div  className="relative overflow-hidden">
+            {/* Blueprint Grid */}
+        <div
+            className="absolute inset-0 opacity-[0.05]"
+            style={{
+                backgroundImage: `
+                    linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px)
+                `,
+                backgroundSize: "40px 40px",
+            }}
+        />
+        <div
+    className="absolute inset-0"
+    style={{
+        background: `
+            radial-gradient(circle at center,
+                rgba(255,255,255,.05),
+                transparent 65%)
+        `,
+    }}
+/>
+         <Container>
+
+          <div className=" relative py-28 text-center">
+
+             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-200">
+                Ready To Get Started?
+            </p>
+
+           <h2 className="mt-6 text-5xl font-bold leading-tight lg:text-6xl">
+               Professional Plumbing
+              <br />
+                 Starts With One Call.
+             </h2>
+
+              <p className="mx-auto mt-8 max-w-2xl text-xl leading-9 text-blue-100">
+               Whether you need drain cleaning, water service replacement,
+               excavation, water heater installation, or emergency plumbing,
+               we&apos;re ready to help.
+             </p>
+
+            <div className="mt-12 flex flex-wrap justify-center gap-5">
+
+              <Button>
+
+                  Request Service
+
+                </Button>
+
+              <Button variant="secondary">
+
+                 {site.phone}
+
+               </Button>
+
+            </div>
+
+            </div>
+
+         </Container>
+        </div>
+
+      {/* Divider */}
+
+     <div className="relative">
+
+    {/* Line */}
+
+    <div className="h-px bg-white/10" />
+
+    {/* Circle */}
+
+    <div className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-[#123B63]" />
+
+</div>
+
+      {/* Footer */}
+
+      <Container>
+
+        <div className="grid gap-16 py-20 lg:grid-cols-[2fr_1fr_1fr_1fr]">
+
+          {/* Company */}
+
+          <div>
+
+            <Image
+              src="/images/logo/ppslogo.png"
+              alt={site.name}
+              width={260}
+              height={70}
+            />
+
+            <p className="mt-8 max-w-md leading-8 text-blue-100">
+              Professional residential and commercial plumbing
+              services throughout Philadelphia.
+
+              From routine repairs to complex excavation and
+              water service replacement, we&apos;re committed to
+              quality workmanship and dependable service.
+            </p>
+
+          </div>
+
+          {/* Services */}
+
+          <div>
+
+            <h3 className="text-lg font-semibold">
+              Services
+            </h3>
+
+            <ul className="mt-6 space-y-4">
+
+              {site.services.map((service) => (
+
+                <li key={service.title}>
+
+                  <Link
+                    href={service.href}
+                    className="text-blue-100 transition hover:text-white"
+                  >
+                    {service.title}
+                  </Link>
+
+                </li>
+
+              ))}
+
+            </ul>
+
+          </div>
+
+          {/* Company */}
+
+          <div>
+
+            <h3 className="text-lg font-semibold">
+              Company
+            </h3>
+
+            <ul className="mt-6 space-y-4">
+
+              {site.navigation.map((item) => (
+
+                <li key={item.label}>
+
+                  <Link
+                    href={item.href}
+                    className="text-blue-100 transition hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+
+                </li>
+
+              ))}
+
+            </ul>
+
+          </div>
+
+          {/* Contact */}
+
+          <div>
+
+            <h3 className="text-lg font-semibold">
+              Contact
+            </h3>
+
+            <div className="mt-6 space-y-5 text-blue-100">
+
+              <p>{site.phone}</p>
+
+              <p>{site.email}</p>
+
+              <p>{site.address}</p>
+
+              <div className="pt-4">
+
+                <p>Licensed & Insured</p>
+
+                <p>Certified Master Plumber</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </Container>
+
+      {/* Bottom */}
+
+      <div className="border-t border-white/10">
+
+        <Container>
+
+          <div className="flex flex-col items-center justify-between gap-4 py-8 text-sm text-blue-300 md:flex-row">
+
+            <p>
+              © {new Date().getFullYear()} {site.name}. All rights reserved.
+            </p>
+
+            <p>
+              Serving Philadelphia, Pennsylvania
+            </p>
+
+          </div>
+
+        </Container>
+
+      </div>
+
+    </footer>
+  );
+}
