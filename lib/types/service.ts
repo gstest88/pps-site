@@ -27,5 +27,10 @@ export interface Service {
 
   benefits: string[];
 
+  process: {
+    title: string;
+    description: string;
+  }
+
   faqs: FAQ[];
 }

@@ -4,6 +4,13 @@ import { getService } from "@/lib/utils/getService";
 import { services } from "@/lib/data/services";
 
 import { Metadata } from "next";
+import Navbar from "@/app/components/layout/Navbar";
+import ServiceHero from "@/app/components/services/ServiceHero";
+import ServiceBenefits from "@/app/components/services/ServiceBenefits";
+import ServiceProblems from "@/app/components/services/ServiceProblems";
+import ServiceFAQ from "@/app/components/services/ServiceFAQ";
+import Footer from "@/app/components/layout/Footer";
+import RelatedServices from "@/app/components/services/RelatedServices";
 
 export async function generateMetadata({
     params,
@@ -51,17 +58,21 @@ export default async function ServicePage({
 
     return (
 
-        <main className="mx-auto max-w-5xl px-6 py-32">
+       <>
+    <Navbar />
 
-            <h1 className="text-6xl font-bold text-[#123B63]">
-                {service.title}
-            </h1>
+    <ServiceHero service={service} />
 
-            <p className="mt-8 text-xl leading-9 text-slate-600">
-                {service.heroDescription}
-            </p>
+    <ServiceBenefits service={service} />
 
-        </main>
+    <ServiceProblems service={service} />
+
+    <ServiceFAQ service={service} />
+
+    <RelatedServices service={service} />
+
+    <Footer />
+</>
 
     );
 }
