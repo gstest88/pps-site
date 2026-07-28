@@ -5,8 +5,8 @@ import WhyChoose from "../components/home/WhyChoose";
 
 import AboutHero from "../components/about/AboutHero";
 import AboutStory from "../components/about/AboutStory";
-// import AboutFeatures from ../components/about/AboutFeatures";
-// import AboutValues from "../components/about/AboutValues";
+import AboutFeatures from "../components/about/AboutFeatures";
+import AboutValues from "../components/about/AboutValues";
 
 import { Metadata } from "next";
 
@@ -26,9 +26,9 @@ export default function AboutPage() {
 
         <AboutStory />
 
-        {/* <AboutFeatures />
+        <AboutFeatures />
 
-        <AboutValues /> */}
+        <AboutValues />
 
         <WhyChoose />
       </main>
