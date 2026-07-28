@@ -4,10 +4,11 @@ import Image from "next/image";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import { site } from "@/lib/config/site";
+import { routes } from "@/lib/routes";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#123B63] to-[#0C2742] text-white">
+    <footer className="bg-linear-to-b from-[#123B63] to-[#0C2742] text-white">
 
       {/* CTA */}
         <div  className="relative overflow-hidden">
@@ -130,7 +131,7 @@ export default function Footer() {
                 <li key={service.title}>
 
                   <Link
-                    href={service.href}
+                    href={routes.services.detail(service.slug)}
                     className="text-blue-100 transition hover:text-white"
                   >
                     {service.title}

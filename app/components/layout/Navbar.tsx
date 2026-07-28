@@ -4,6 +4,7 @@ import Container from "../ui/Container";
 import Button from "../ui/Button";
 import Logo from "./Logo";
 import { site } from "../../../lib/config/site";
+import { routes } from "@/lib/routes";
 
 const links = site.navigation
 
@@ -38,7 +39,7 @@ export default function Navbar() {
             </p>
           </div>
 
-          <Button>
+          <Button href={routes.contact}>
 
             Request Service
 

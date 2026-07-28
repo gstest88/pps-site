@@ -2,6 +2,7 @@ import Button from "../ui/Button";
 import Container from "../ui/Container";
 import Image from "next/image";
 import { site } from "../../../lib/config/site";
+import { routes } from "@/lib/routes";
 
 export default function Hero() {
   return (
@@ -39,7 +40,7 @@ export default function Hero() {
 
   <div className="mt-12 flex flex-wrap gap-4">
 
-    <Button>
+    <Button href={routes.contact}>
 
       Request Service
 

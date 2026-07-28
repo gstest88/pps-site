@@ -3,6 +3,7 @@ import Container from "../ui/Container";
 import Heading from "../ui/Heading";
 import ServiceCard from "./ServicesCard";
 import { services } from "../../../lib/data/services";
+import { routes } from "@/lib/routes";
 
 export default function Services() {
   return (
@@ -19,6 +20,8 @@ export default function Services() {
 
           {services.map((service) => (
             <ServiceCard
+              href={routes.services.detail(service.slug)}
+              description={service.shortDescription}
               key={service.title}
               {...service}
             />

@@ -5,6 +5,7 @@ import Button from "../ui/Button";
 import Container from "../ui/Container";
 import Heading from "../ui/Heading";
 import Section from "../ui/Section";
+import { routes } from "@/lib/routes";
 
 const highlights = [
   "Certified Master Plumber",
@@ -61,7 +62,7 @@ export default function About() {
 
             <div className="mt-12">
 
-              <Button href="/about">
+              <Button href={routes.about}>
                 Learn More
               </Button>
 

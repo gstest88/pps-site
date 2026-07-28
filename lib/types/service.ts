@@ -1,8 +1,31 @@
 import { LucideIcon } from "lucide-react";
+export interface FAQ {
+  question: string;
+  answer: string;
+}
 
 export interface Service {
-    title: string;
-    description: string;
-    href: string;
-    icon: LucideIcon;
+  slug: string;
+
+  title: string;
+
+  shortDescription: string;
+
+  heroDescription: string;
+
+  seoTitle: string;
+
+  metaDescription: string;
+
+  image: string;
+
+  icon: LucideIcon;
+
+  featured?: boolean;
+
+  problems: string[];
+
+  benefits: string[];
+
+  faqs: FAQ[];
 }
