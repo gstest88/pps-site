@@ -4,33 +4,42 @@ export interface FAQ {
   answer: string;
 }
 
-export interface Service {
-  slug: string;
+export interface ProcessStep {
+  title: string;
+  description: string;
+}
 
+export type ServiceCategory =
+  | "residential"
+  | "commercial"
+  | "both";
+
+export interface Service {
+  // Identity
+  slug: string;
   title: string;
 
+  // Display
   shortDescription: string;
-
   heroDescription: string;
-
-  seoTitle: string;
-
-  metaDescription: string;
-
   image: string;
-
+  heroImageAlt: string;
   icon: LucideIcon;
 
-  featured?: boolean;
+  // SEO
+  seoTitle: string;
+  metaDescription: string;
 
+  // Organization
+  category: ServiceCategory;
+  featured: boolean;
+
+  // Content
   problems: string[];
-
   benefits: string[];
-
-  process: {
-    title: string;
-    description: string;
-  }[];
-
+  process: ProcessStep[];
   faqs: FAQ[];
+
+  // Relationships
+  relatedServices: string[];
 }
