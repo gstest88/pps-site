@@ -1,9 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
 import { Service } from "@/lib/types/service";
 import { site } from "@/lib/config/site";
+import {
+  ShieldCheck,
+  Wrench,
+  Building2,
+  MapPin,
+  Phone
+} from "lucide-react";
 
 interface Props {
   service: Service;
@@ -24,7 +32,12 @@ export default function ServiceHero({ service }: Props) {
     className="mb-10 flex items-center gap-2 text-sm text-slate-500"
     aria-label="Breadcrumb"
   >
-    <span>Home</span>
+    <Link 
+      href="/" 
+      className="text-slate-500 transition-colors hover:text-[#005A9C]" 
+    >
+      Home
+    </Link>
 
 
     <span>/</span>
@@ -38,8 +51,7 @@ export default function ServiceHero({ service }: Props) {
             <p className="font-semibold uppercase tracking-[0.2em] text-[#005A9C]">
               {site.name}
             </p>
-
-            <h1 className="mt-4 text-5xl font-bold text-[#123B63] lg:text-6xl">
+            <h1 className="mt-4 max-w-xl text-5xl font-extrabold tracking-tight text-[#123B63] lg:text-6xl">
               {service.title}
             </h1>
 
@@ -53,25 +65,30 @@ export default function ServiceHero({ service }: Props) {
               </Button>
 
               <Button variant="secondary">
+                <Phone size={10} className="mr-2" />
                 {site.phone}
               </Button>
             </div>
-            <div className="mt-10 flex flex-wrap gap-3">
-  <span className="rounded-full bg-[#005A9C]/10 px-4 py-2 text-sm font-semibold text-[#005A9C]">
-    Certified Master Plumber
-  </span>
+<div className="mt-10 flex flex-wrap gap-3">
+   <div className="flex items-center gap-2 rounded-full bg-[#005A9C]/10 px-4 py-2 text-sm font-semibold text-[#005A9C]">
+    <ShieldCheck size={16} />
+    Licensed & Insured
+  </div>
 
-  <span className="rounded-full bg-[#005A9C]/10 px-4 py-2 text-sm font-semibold text-[#005A9C]">
-    Licensed &amp; Insured
-  </span>
+  <div className="flex items-center gap-2 rounded-full bg-[#005A9C]/10 px-4 py-2 text-sm font-semibold text-[#005A9C]">
+    <Wrench size={16} />
+    Master Plumber
+  </div>
 
-  <span className="rounded-full bg-[#005A9C]/10 px-4 py-2 text-sm font-semibold text-[#005A9C]">
-    Residential &amp; Commercial
-  </span>
+  <div className="flex items-center gap-2 rounded-full bg-[#005A9C]/10 px-4 py-2 text-sm font-semibold text-[#005A9C]">
+    <Building2 size={16} />
+    Residential & Commercial
+  </div>
 
-  <span className="rounded-full bg-[#005A9C]/10 px-4 py-2 text-sm font-semibold text-[#005A9C]">
+  <div className="flex items-center gap-2 rounded-full bg-[#005A9C]/10 px-4 py-2 text-sm font-semibold text-[#005A9C]">
+    <MapPin size={16} />
     Serving Philadelphia
-  </span>
+  </div>
 </div>
           </div>
 
@@ -85,8 +102,11 @@ export default function ServiceHero({ service }: Props) {
               fill
               className="object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#123B63]/10 via-transparent to-transparent" />
               </div>
+              
           </div>
+          
         </div>
       </Container>
     </section>
