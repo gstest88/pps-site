@@ -1,34 +1,36 @@
-Milestone 1 ✅ Foundation
--------------------------
-✓ Design system
-✓ Navigation
+✅ Milestone 1
+---------------
+✓ Design System
+✓ Navbar
 ✓ Hero
-✓ Trust section
+✓ Trust Bar
 
-Milestone 2
--------------------------
-□ Services section
-□ About section
-□ CTA
-□ Footer
+Milestone 2A — Build the Homepage
+✅ Services
+✅ Why Philadelphia Chooses Us
+⬜ About
+⬜ CTA
+⬜ Footer
 
-Milestone 3
--------------------------
-□ Mobile navigation
-□ Animations
-□ Scroll effects
-□ Hero image composition
+Milestone 2B — Refine the Homepage
+⬜ Perfect spacing and typography.
+⬜ Replace temporary icons and photos.
+⬜ Add animations and interactions.
+⬜ Introduce featured service cards.
+⬜ Make the navigation feel premium.
 
-Milestone 4
--------------------------
-□ Individual service pages
-□ Contact page
-□ Quote request form
-□ SEO optimization
+🟨 Milestone 3
+---------------
+⬜ Mobile Navigation
+⬜ Animations
+⬜ Hero polish
+⬜ Featured Services
+⬜ Premium interactions
 
-Milestone 5
--------------------------
-□ Google Reviews integration
-□ Google Maps
-□ Analytics
-□ Deployment
+🟨 Milestone 4
+---------------
+⬜ Individual Service Pages
+⬜ Contact Form
+⬜ Google Maps
+⬜ SEO
+⬜ Reviews
