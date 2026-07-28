@@ -15,6 +15,7 @@ import ServiceFAQ from "@/app/components/services/ServiceFAQ";
 import Footer from "@/app/components/layout/Footer";
 import RelatedServices from "@/app/components/services/RelatedServices";
 import ServiceCallout from "@/app/components/services/ServiceCallout";
+import ServiceAreas from "@/app/components/services/ServiceAreas";
 
 export async function generateMetadata({
     params,
@@ -76,6 +77,8 @@ export default async function ServicePage({
     <ServiceCallout />
 
     <ServiceFAQ service={service} />
+
+    <ServiceAreas />
 
     <RelatedServices service={service} />
 
