@@ -7,6 +7,8 @@ import Section from "../../components/ui/Section";
 import { services } from "@/lib/data/services";
 import { Service } from "@/lib/types/service";
 import { routes } from "@/lib/routes";
+import Card from "../ui/Card";
+import CardContent from "../ui/CardContent";
 
 interface Props {
   service: Service;
@@ -32,29 +34,33 @@ export default function RelatedServices({ service }: Props) {
 
             return (
               <Link
-                key={related.slug}
-                href={routes.services.detail(related.slug)}
-                className="group rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#005A9C] hover:shadow-xl"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#005A9C]/10 transition-colors group-hover:bg-[#005A9C]">
-                  <Icon
-                    className="text-[#005A9C] transition-colors group-hover:text-white"
-                    size={28}
-                  />
-                </div>
+              key={related.slug}
+  href={routes.services.detail(related.slug)}
+  className="group block h-full"
+>
+  <Card className="flex h-full flex-col hover:-translate-y-2 hover:border-[#005A9C] hover:shadow-xl">
+    <CardContent className="flex h-full flex-col">
+      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#005A9C]/10 transition-colors group-hover:bg-[#005A9C]">
+        <Icon
+          className="text-[#005A9C] transition-colors group-hover:text-white"
+          size={28}
+        />
+      </div>
 
-                <h3 className="mt-8 text-2xl font-bold text-[#123B63]">
-                  {related.title}
-                </h3>
+      <h3 className="mt-8 text-2xl font-bold text-[#123B63]">
+        {related.title}
+      </h3>
 
-                <p className="mt-4 leading-7 text-slate-600">
-                  {related.shortDescription}
-                </p>
+      <p className="mt-4 flex-grow text-slate-600">
+        {related.shortDescription}
+      </p>
 
-                <span className="mt-8 inline-flex items-center font-semibold text-[#005A9C] transition-transform group-hover:translate-x-1">
-                  Learn More →
-                </span>
-              </Link>
+      <span className="mt-8 font-semibold text-[#005A9C]">
+        Learn More →
+      </span>
+    </CardContent>
+  </Card>
+</Link>
             );
           })}
         </div>

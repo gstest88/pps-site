@@ -4,6 +4,8 @@ import Heading from "../../components/ui/Heading";
 
 import { Service } from "@/lib/types/service";
 import { CheckCircle2 } from "lucide-react";
+import Card from "../ui/Card";
+import CardContent from "../ui/CardContent";
 
 interface Props {
   service: Service;
@@ -20,16 +22,19 @@ export default function ServiceBenefits({ service }: Props) {
 
         <div className="mt-16 grid gap-8 md:grid-cols-2">
           {service.benefits.map((benefit) => (
-            <div
-              key={benefit}
-              className="flex items-center gap-4 rounded-3xl border border-slate-200 p-8"
-            >
-              <CheckCircle2 className="text-[#005A9C]" />
+            <Card
+            key={benefit} className="group hover:-translate-y-1 hover:border-[#005A9C] hover:shadow-lg">
+  <CardContent className="flex items-center gap-4">
+    <CheckCircle2
+      className="text-[#005A9C] transition-transform duration-300 group-hover:scale-110"
+      size={28}
+    />
 
-              <span className="text-lg text-slate-700">
-                {benefit}
-              </span>
-            </div>
+    <span className="text-lg text-slate-700">
+      {benefit}
+    </span>
+  </CardContent>
+</Card>
           ))}
         </div>
       </Container>

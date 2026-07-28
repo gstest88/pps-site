@@ -3,7 +3,9 @@ import Section from "../../components/ui/Section";
 import Heading from "../../components/ui/Heading";
 
 import { Service } from "@/lib/types/service";
-import { CheckCircle2 } from "lucide-react";
+import { AlertTriangle, CheckCircle2 } from "lucide-react";
+import Card from "../ui/Card";
+import CardContent from "../ui/CardContent";
 
 interface Props {
   service: Service;
@@ -20,16 +22,16 @@ export default function ServiceProblems({ service }: Props) {
 
         <div className="mt-16 grid gap-8 md:grid-cols-2">
           {service.problems.map((problem) => (
-            <div
-              key={problem}
-              className="flex items-center gap-4 rounded-3xl border border-slate-200 p-8"
-            >
-              <CheckCircle2 className="text-[#005A9C]" />
+            <Card key={problem} className="group hover:-translate-y-1 hover:border-red-300 hover:shadow-lg">
+  <CardContent className="flex items-center gap-4">
+    <AlertTriangle
+      className="text-red-500 transition-transform duration-300 group-hover:scale-110"
+      size={28}
+    />
 
-              <span className="text-lg text-slate-700">
-                {problem}
-              </span>
-            </div>
+    <span>{problem}</span>
+  </CardContent>
+</Card>
           ))}
         </div>
       </Container>

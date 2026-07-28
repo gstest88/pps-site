@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import Card from "./Card";
 
 interface AccordionItem {
   question: string;
@@ -39,9 +40,9 @@ const toggle = (index: number) => {
         const isOpen = openItems.includes(index);
 
         return (
-          <div
+          <Card
             key={item.question}
-            className="overflow-hidden rounded-2xl border border-slate-200 bg-white"
+            className={"group hover:-translate-y-1 hover:border-[#005A9C] hover:shadow-lg rounded-3xl overflow-hidden"}
           >
             <button
               type="button"
@@ -70,7 +71,7 @@ const toggle = (index: number) => {
                 </p>
               </div>
             </div>
-          </div>
+          </Card>
         );
       })}
     </div>
