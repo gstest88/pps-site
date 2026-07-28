@@ -30,7 +30,7 @@ export interface Service {
   process: {
     title: string;
     description: string;
-  }
+  }[];
 
   faqs: FAQ[];
 }

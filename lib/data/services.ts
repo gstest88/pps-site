@@ -40,6 +40,34 @@ export const services: Service[] = [
         "Residential & commercial service",
     ],
 
+    process: [
+  {
+    title: "Inspect",
+    description:
+      "We evaluate the symptoms and determine where the blockage is located."
+  },
+  {
+    title: "Diagnose",
+    description:
+      "If needed, we use professional equipment to identify the cause of the clog."
+  },
+  {
+    title: "Clear",
+    description:
+      "We remove the blockage using the safest and most effective method."
+  },
+  {
+    title: "Test",
+    description:
+      "We verify proper drainage and ensure the line is flowing correctly."
+  },
+  {
+    title: "Prevent",
+    description:
+      "We explain what caused the issue and provide tips to help prevent future clogs."
+  }
+],
+
     problems: [
         "Slow draining sinks",
         "Recurring clogs",

@@ -3,8 +3,11 @@ import { getService } from "@/lib/utils/getService";
 
 import { services } from "@/lib/data/services";
 
+
 import { Metadata } from "next";
+
 import Navbar from "@/app/components/layout/Navbar";
+import ServiceProcess from "@/app/components/services/ServiceProcess";
 import ServiceHero from "@/app/components/services/ServiceHero";
 import ServiceBenefits from "@/app/components/services/ServiceBenefits";
 import ServiceProblems from "@/app/components/services/ServiceProblems";
@@ -62,6 +65,8 @@ export default async function ServicePage({
     <Navbar />
 
     <ServiceHero service={service} />
+
+    <ServiceProcess service={service} />
 
     <ServiceBenefits service={service} />
 
