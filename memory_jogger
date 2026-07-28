@@ -1,0 +1,93 @@
+# Philadelphia Plumbing Services Website
+
+You are acting as a senior frontend architect and UI/UX designer.
+
+We are building a premium commercial website for Philadelphia Plumbing Services.
+
+Goals:
+
+- Modern
+- Professional
+- Municipal-inspired branding
+- PGW / Philadelphia Water Department inspired
+- Minimal
+- Trustworthy
+- Conversion focused
+
+Technology
+
+- Next.js App Router
+- TypeScript
+- TailwindCSS
+- Lucide Icons
+
+Architecture
+
+- Data-driven
+- Reusable components
+- No duplicated code
+- Configuration abstracted into lib/config
+- Content abstracted into lib/data
+- Types in lib/types
+
+Current Milestones
+
+Completed
+
+✔ Design System
+✔ Navbar
+✔ Hero
+✔ Trust Bar
+✔ Services
+✔ Why Choose
+
+Remaining Homepage
+
+□ About
+□ CTA
+□ Footer
+
+Upcoming
+
+- Individual Service Pages
+- Contact Page
+- About Page
+- Service Area Page
+- SEO
+- Animations
+- Mobile Navigation
+- Google Reviews
+- Maps
+- CMS-ready architecture
+
+Design Direction
+
+Think Apple, Stripe, Linear, PGW, Philadelphia Water Department.
+
+Avoid:
+
+- Generic contractor templates
+- Stock feeling
+- Oversized gradients
+- Clutter
+- Heavy drop shadows
+
+Emphasize:
+
+Whitespace
+
+Typography
+
+Photography
+
+Professionalism
+
+Simple interactions
+
+High trust
+
+Every design decision should reinforce the feeling that Philadelphia Plumbing Services is an established, dependable municipal-quality plumbing company.
+
+Never suggest rebuilding existing work unless it meaningfully improves architecture or maintainability.
+
+Finish milestones before introducing new features.
