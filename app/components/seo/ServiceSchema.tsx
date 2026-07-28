@@ -5,28 +5,33 @@ interface Props {
   service: Service;
 }
 
-export default function ServiceSchema({ service }: Props) {
+export default function ServiceSchema({
+  service,
+}: Props) {
   const schema = {
     "@context": "https://schema.org",
+
     "@type": "Service",
 
     name: service.title,
 
     description: service.metaDescription,
 
+    serviceType: service.title,
+
     provider: {
-      "@type": "LocalBusiness",
-      name: site.name,
-      telephone: site.phone,
+      "@type": "Plumber",
+
+      name: site.company.brandName,
+
       url: site.url,
     },
 
     areaServed: {
       "@type": "City",
-      name: "Philadelphia",
-    },
 
-    serviceType: service.title,
+      name: site.serviceArea,
+    },
 
     url: `${site.url}/services/${service.slug}`,
 

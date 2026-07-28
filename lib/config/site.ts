@@ -4,6 +4,12 @@ import { services } from "../data/services";
 export const site = {
     name: "Philadelphia Plumbing Services",
 
+
+    company: {
+        legalName: "Philadelphia Plumbing Services LLC",
+        brandName: "Philadelphia Plumbing Services",
+    },
+
     url: "https://philadelphiaplumbingservices.com",
 
     shortName: "PPS",
@@ -17,6 +23,12 @@ export const site = {
     navigation,
 
     services,
+
+    serviceArea: "Philadelphia",
+
+    state: "PA",
+
+country: "US",
 
     socials: {
         facebook: "",

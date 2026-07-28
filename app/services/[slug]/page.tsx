@@ -16,7 +16,11 @@ import Footer from "@/app/components/layout/Footer";
 import RelatedServices from "@/app/components/services/RelatedServices";
 import ServiceCallout from "@/app/components/services/ServiceCallout";
 import ServiceAreas from "@/app/components/services/ServiceAreas";
-import ServiceSchema from "@/app/components/services/ServiceSchema";
+import ServiceSchema from "@/app/components/seo/ServiceSchema";
+import BreadcrumbSchema from "@/app/components/seo/BreadcrumbSchema";
+import FAQSchema from "@/app/components/seo/FAQSchema";
+import OrganizationSchema from "@/app/components/seo/OrganizationSchema";
+
 
 export async function generateMetadata({
     params,
@@ -96,7 +100,10 @@ export default async function ServicePage({
     return (
 
        <>
+       <OrganizationSchema />
        <ServiceSchema service={service} />
+       <FAQSchema faqs={service.faqs} />
+         <BreadcrumbSchema service={service} />
     <Navbar />
 
     <ServiceHero service={service} />
