@@ -1,6 +1,7 @@
 import Button from "../ui/Button";
 import Container from "../ui/Container";
 import Image from "next/image";
+import { site } from "../../../lib/config/site";
 
 export default function Hero() {
   return (
@@ -46,7 +47,7 @@ export default function Hero() {
 
     <Button variant="outline">
 
-      Call (215) 555-1234
+      Call {site.phone}
 
     </Button>
 

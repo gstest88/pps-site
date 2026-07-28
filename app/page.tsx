@@ -4,6 +4,7 @@ import TrustBar from "@/app/components/home/TrustBar";
 import Services from "@/app/components/home/Services";
 import WhyChoose from "@/app/components/home/WhyChoose";
 import About from "./components/home/About";
+import CTA from "./components/home/CTA";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <WhyChoose />
       <About />
+      <CTA />
     </>
   );
 }

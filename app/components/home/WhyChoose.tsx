@@ -1,40 +1,7 @@
 import Container from "../ui/Container";
 import Heading from "../ui/Heading";
 import Section from "../ui/Section";
-
-import {
-    ShieldCheck,
-    Clock3,
-    Wrench,
-    MapPinned,
-} from "lucide-react";
-
-const features = [
-    {
-        icon: ShieldCheck,
-        title: "Licensed & Insured",
-        description:
-            "Every project is completed by a Certified Master Plumber and backed by full insurance coverage for your peace of mind.",
-    },
-    {
-        icon: Clock3,
-        title: "Reliable Scheduling",
-        description:
-            "We respect your time with clear communication, dependable scheduling, and prompt arrival windows.",
-    },
-    {
-        icon: Wrench,
-        title: "Quality Workmanship",
-        description:
-            "Whether it's a drain cleaning or a complete water service replacement, every job is completed with care and attention to detail.",
-    },
-    {
-        icon: MapPinned,
-        title: "Focused on Philadelphia",
-        description:
-            "Our team proudly serves homeowners, businesses, and property managers throughout Philadelphia.",
-    },
-];
+import { features } from "../../../lib/data/features";
 
 export default function WhyChoose() {
     return (

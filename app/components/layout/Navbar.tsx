@@ -3,14 +3,9 @@
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import Logo from "./Logo";
+import { site } from "../../../lib/config/site";
 
-const links = [
-  { name: "Home", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Service Area", href: "#" },
-  { name: "Contact", href: "#" },
-];
+const links = site.navigation
 
 export default function Navbar() {
   return (
@@ -22,11 +17,11 @@ export default function Navbar() {
         <nav className="hidden gap-10 text-sm font-medium text-slate-700 lg:flex">
           {links.map((link) => (
             <a
-              key={link.name}
+              key={link.label}
               href={link.href}
               className="transition-colors hover:text-[#005A9C]"
             >
-              {link.name}
+              {link.label}
             </a>
           ))}
         </nav>
