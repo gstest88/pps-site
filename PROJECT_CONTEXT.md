@@ -96,13 +96,11 @@ Completed
 
 ✓ Why Choose Us
 
-Remaining Homepage
+✓ About
 
-□ About
+✓ CTA
 
-□ CTA
-
-□ Footer
+✓ Footer
 
 Upcoming
 

@@ -16,11 +16,11 @@ Milestone 2
 
 [x] Why Choose
 
-[ ] About
+[x] About
 
-[ ] CTA
+[x] CTA
 
-[ ] Footer
+[x] Footer
 
 Milestone 3
 
