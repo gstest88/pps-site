@@ -6,8 +6,8 @@ import Footer from "@/app/components/layout/Footer";
 import ContactHero from "@/app/components/contact/ContactHero";
 import ContactCards from "@/app/components/contact/ContactCards";
 
-// import ContactServiceArea from "@/app/components/contact/ContactServiceArea";
-// import ContactCTA from "@/app/components/contact/ContactCTA";
+import ContactServiceArea from "@/app/components/contact/ContactServiceArea";
+import ContactCTA from "@/app/components/contact/ContactCTA";
 import RequestServiceForm from "@/app/components/about/RequestServiceForm";
 
 export const metadata: Metadata = {
@@ -28,9 +28,9 @@ export default function ContactPage() {
 
         <RequestServiceForm />
 
-        {/* <ContactServiceArea /> */}
+        <ContactServiceArea />
 
-        {/* <ContactCTA /> */}
+        <ContactCTA />
       </main>
 
       <Footer />

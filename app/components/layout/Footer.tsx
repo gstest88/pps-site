@@ -51,7 +51,7 @@ export default function Footer() {
             </p>
 
             <div className="mt-12 flex flex-wrap justify-center gap-5">
-              <Button>Request Service</Button>
+              <Button href={"/contact"}>Request Service</Button>
 
               <Button variant="secondary">{site.phone}</Button>
             </div>

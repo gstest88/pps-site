@@ -6,6 +6,7 @@ type ButtonProps = {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "outline";
   className?: string;
+  contentClassName?: string;
 };
 
 export default function Button({
@@ -13,6 +14,7 @@ export default function Button({
   children,
   variant = "primary",
   className,
+  contentClassName,
 }: ButtonProps) {
   const classes = clsx(
     "group inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-semibold transition-all duration-300",
@@ -30,14 +32,13 @@ export default function Button({
   const content = (
     <span
       className={clsx(
-        "inline-flex items-center justify-center transition-colors duration-300",
+        "inline-flex items-center justify-center gap-2 transition-colors duration-300",
         {
           "text-white": variant === "primary",
-
           "text-[#123B63]": variant === "secondary",
-
           "text-[#005A9C] group-hover:text-white": variant === "outline",
         },
+        contentClassName,
       )}
     >
       {children}
