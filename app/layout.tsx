@@ -10,6 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://your-project-name.vercel.app"),
+  // metadataBase: new URL("https://philadelphiaplumbingservices.com"),
+
   title: {
     default: "Philadelphia Plumbing Services",
     template: "%s | Philadelphia Plumbing Services",
