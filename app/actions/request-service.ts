@@ -50,7 +50,9 @@ export async function submitServiceRequest(
     };
   }
 
-  if (email && !email.includes("@")) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (email && !emailPattern.test(email)) {
     return {
       success: false,
       message: "Please enter a valid email address.",
