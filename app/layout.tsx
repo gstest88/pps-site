@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pps-site.vercel.app"),
+  metadataBase: new URL("https://pps-site-ruby.vercel.app/"),
   // metadataBase: new URL("https://philadelphiaplumbingservices.com"),
 
   title: {
