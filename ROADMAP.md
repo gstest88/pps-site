@@ -1,59 +1,215 @@
-# Roadmap
+# Philadelphia Plumbing Services
 
-Milestone 1
+## Project Roadmap
 
-[x] Design System
+Last Updated: ****\_\_****
 
-[x] Navbar
+---
 
-[x] Hero
+# Phase 1 — Core Website ✅
 
-[x] Trust
+## Foundation
 
-Milestone 2
+- [x] Next.js App Router
+- [x] TypeScript
+- [x] Tailwind CSS
+- [x] Responsive layout
+- [x] Reusable UI components
+- [x] Site configuration
+- [x] Dynamic service routing
 
-[x] Services
+## Pages
 
-[x] Why Choose
+- [x] Home
+- [x] About
+- [x] Services
+- [x] Dynamic Service Pages
+- [x] Contact
+- [x] 404 Page
+- [x] Loading Page
 
-[x] About
+## SEO
 
-[x] CTA
+- [x] Metadata
+- [x] Dynamic metadata
+- [x] Sitemap
+- [x] Robots
+- [x] Structured Data
+  - [x] Organization
+  - [x] Service
+  - [x] FAQ
+  - [x] Breadcrumb
+- [x] Internal linking
+- [x] QA review
 
-[x] Footer
+Status: ✅ COMPLETE
 
-Milestone 3
+---
 
-[ ] Service Pages
+# Phase 2 — Branding
 
-[ ] Services Landing
+## Logo
 
-[ ] Contact
+- [ ] Final logo
+- [ ] Favicon
+- [ ] Apple touch icon
+- [ ] Android icons
+- [ ] Open Graph image
 
-[ ] About
+## Images
 
-[ ] Service Area
+- [ ] Hero image
+- [ ] Service images
+- [ ] About page images
+- [ ] Truck photos
+- [ ] Equipment photos
 
-Milestone 4
+Status: ⏳ Not Started
 
-[ ] Mobile Navigation
+---
 
-[ ] Animations
+# Phase 3 — Domain & Deployment
 
-[ ] SEO
+## Domain
 
-[ ] Google Reviews
+- [ ] Purchase domain
+- [ ] Connect DNS
+- [ ] SSL enabled
 
-[ ] Maps
+## Deployment
 
-Milestone 5
+- [ ] Production deployment
+- [ ] Verify HTTPS
+- [ ] Test production build
 
-[ ] Launch
+## Metadata
 
-[ ] Analytics
+- [ ] Add metadataBase
+- [ ] Restore canonical URLs
+- [ ] Enable Open Graph metadata
+- [ ] Verify social previews
 
-[ ] Performance Audit
+Status: ⏳ Not Started
 
-[ ] Accessibility Audit
+---
 
-[ ] Production Deployment
+# Phase 4 — Contact Form
+
+## Email
+
+- [ ] Create business email
+- [ ] Configure Resend
+- [ ] Verify sending domain
+
+## Form
+
+- [ ] Server Action
+- [ ] Email template
+- [ ] Success state
+- [ ] Error handling
+- [ ] Spam protection
+- [ ] Mobile testing
+
+Status: ⏳ Not Started
+
+---
+
+# Phase 5 — Analytics & Search
+
+## Google
+
+- [ ] Google Search Console
+- [ ] Submit sitemap
+- [ ] Request indexing
+
+## Analytics
+
+- [ ] Google Analytics 4
+- [ ] Microsoft Clarity
+
+Status: ⏳ Not Started
+
+---
+
+# Phase 6 — Google Business Profile
+
+- [ ] Website connected
+- [ ] Service list completed
+- [ ] Business description
+- [ ] Photos uploaded
+- [ ] Logo uploaded
+- [ ] Cover photo
+- [ ] Verify business information
+- [ ] Begin collecting reviews
+
+Status: ⏳ Not Started
+
+---
+
+# Phase 7 — Launch
+
+## Final QA
+
+- [ ] Desktop
+- [ ] Tablet
+- [ ] Mobile
+- [ ] Contact form
+- [ ] Phone links
+- [ ] Navigation
+- [ ] Images
+- [ ] Lighthouse audit
+
+## Launch
+
+- [ ] Go live
+- [ ] Submit sitemap
+- [ ] Verify indexing
+- [ ] Share website
+
+Status: ⏳ Not Started
+
+---
+
+# Phase 8 — Growth
+
+## Content
+
+- [ ] Customer testimonials
+- [ ] Project gallery
+- [ ] Before & after photos
+- [ ] FAQ expansion
+
+## SEO
+
+- [ ] Neighborhood pages
+- [ ] Blog
+- [ ] Plumbing guides
+
+## Marketing
+
+- [ ] Google Ads
+- [ ] Local Services Ads
+- [ ] Facebook page integration
+- [ ] Social media content
+
+Status: ⏳ Ongoing
+
+---
+
+# Future Ideas
+
+## Nice to Have
+
+- [ ] Online appointment scheduling
+- [ ] Financing options
+- [ ] Customer portal
+- [ ] Live chat
+- [ ] AI assistant
+- [ ] Maintenance plan signup
+- [ ] Online payments
+
+---
+
+# Notes
+
+Use this section for future ideas, bugs, or improvements discovered after launch.
