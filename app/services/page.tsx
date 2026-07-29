@@ -9,10 +9,12 @@ import Section from "../components/ui/Section";
 import { services } from "@/lib/data/services";
 import { routes } from "@/lib/routes";
 import { site } from "@/lib/config/site";
+import Navbar from "../components/layout/Navbar";
 
 export default function ServicesPage() {
   return (
     <>
+      <Navbar />
       {/* Hero */}
 
       <Section className="relative overflow-hidden bg-slate-50">
@@ -33,13 +35,9 @@ export default function ServicesPage() {
             </p>
 
             <div className="mt-12 flex flex-wrap justify-center gap-4">
-              <Button>
-                Request Service
-              </Button>
+              <Button>Request Service</Button>
 
-              <Button variant="secondary">
-                {site.phone}
-              </Button>
+              <Button variant="secondary">{site.phone}</Button>
             </div>
           </div>
         </Container>

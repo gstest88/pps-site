@@ -15,27 +15,46 @@ export default function Button({
   className,
 }: ButtonProps) {
   const classes = clsx(
-    "inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-semibold transition-all duration-300",
+    "group inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-semibold transition-all duration-300",
     {
-      "bg-[#005A9C] text-white hover:bg-[#004A81]":
-        variant === "primary",
+      "bg-[#005A9C] hover:bg-[#004A81]": variant === "primary",
 
-      "bg-[#F5F7F9] text-[#123B63] hover:bg-[#E8EEF3]":
-        variant === "secondary",
+      "bg-[#F5F7F9] hover:bg-[#E8EEF3]": variant === "secondary",
 
-      "border border-[#005A9C] text-[#005A9C] hover:bg-[#005A9C] hover:text-white":
+      "border border-[#005A9C] bg-transparent hover:bg-[#005A9C]":
         variant === "outline",
     },
-    className
+    className,
+  );
+
+  const content = (
+    <span
+      className={clsx(
+        "inline-flex items-center justify-center transition-colors duration-300",
+        {
+          "text-white": variant === "primary",
+
+          "text-[#123B63]": variant === "secondary",
+
+          "text-[#005A9C] group-hover:text-white": variant === "outline",
+        },
+      )}
+    >
+      {children}
+    </span>
   );
 
   if (href) {
     return (
       <Link href={href} className={classes}>
-        {children}
+        {content}
       </Link>
     );
   }
 
-  return <button className={classes}>{children}</button>;
+  return (
+    <button type="button" className={classes}>
+      {content}
+    </button>
+  );
 }
