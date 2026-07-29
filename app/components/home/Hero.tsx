@@ -53,15 +53,14 @@ export default function Hero() {
 
           <div className="absolute inset-0 bg-gradient-to-t from-[#123B63]/30 via-transparent to-transparent" />
 
-          <div className="absolute bottom-8 left-8 rounded-2xl bg-white/95 p-6 shadow-xl backdrop-blur">
+          <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-white/95 p-5 shadow-xl backdrop-blur sm:bottom-8 sm:left-8 sm:right-auto sm:max-w-sm sm:p-6">
+            {" "}
             <p className="text-sm uppercase tracking-widest text-slate-500">
               Serving
             </p>
-
             <h3 className="mt-2 text-xl font-bold text-[#123B63]">
               Philadelphia
             </h3>
-
             <p className="mt-2 text-slate-600">
               Residential & Commercial Plumbing
             </p>
