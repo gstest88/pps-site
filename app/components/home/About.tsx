@@ -22,8 +22,9 @@ export default function About() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-[32px] shadow-xl">
             <Image
               src="/plumbing-images/about1.webp"
-              alt="Philadelphia Plumbing Services"
+              alt="Licensed Philadelphia plumber discussing plumbing repairs with a homeowner in a modern kitchen"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </div>

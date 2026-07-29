@@ -91,8 +91,10 @@ export default function ServiceHero({ service }: Props) {
             <div className="relative aspect-[4/3] overflow-hidden rounded-[32px] border border-slate-200 bg-slate-200 shadow-xl">
               <Image
                 src={service.image}
-                alt={service.title}
+                alt={service.heroImageAlt}
                 fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#123B63]/10 via-transparent to-transparent" />

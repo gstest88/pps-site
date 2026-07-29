@@ -41,16 +41,18 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative h-[700px] overflow-hidden rounded-[32px] shadow-2xl">
+        <div className="relative h-[500px] overflow-hidden rounded-[32px] shadow-2xl sm:h-[600px] lg:h-[700px]">
           <Image
             src="/plumbing-images/hero1.webp"
-            alt="Philadelphia Plumbing Services"
+            alt="Licensed plumber servicing a residential plumbing system in Philadelphia"
             fill
             priority
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-[#123B63]/30 via-transparent to-transparent" />
+
           <div className="absolute bottom-8 left-8 rounded-2xl bg-white/95 p-6 shadow-xl backdrop-blur">
             <p className="text-sm uppercase tracking-widest text-slate-500">
               Serving
