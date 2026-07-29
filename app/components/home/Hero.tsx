@@ -43,7 +43,7 @@ export default function Hero() {
 
         <div className="relative h-[700px] overflow-hidden rounded-[32px] shadow-2xl">
           <Image
-            src="/images/hero.jpg"
+            src="/plumbing-images/hero1.png"
             alt="Philadelphia Plumbing Services"
             fill
             priority

@@ -21,7 +21,7 @@ export default function About() {
         <div className="grid items-center gap-20 lg:grid-cols-2">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[32px] shadow-xl">
             <Image
-              src="/images/about.jpg"
+              src="/plumbing-images/about1.png"
               alt="Philadelphia Plumbing Services"
               fill
               className="object-cover"

@@ -26,7 +26,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional drain cleaning, sewer cleaning, hydro jetting, and drain inspections throughout Philadelphia for residential and commercial properties.",
 
-    image: "/images/services/drain-cleaning.jpg",
+    image: "/plumbing-images/drainclean1.png",
 
     heroImageAlt:
       "Professional plumber clearing a clogged residential drain in Philadelphia.",
@@ -122,7 +122,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional plumbing fixture repairs including toilets, faucets, sinks, shower valves, and garbage disposals throughout Philadelphia.",
 
-    image: "/images/services/fixture-repairs.jpg",
+    image: "/plumbing-images/fixture1.png",
 
     heroImageAlt: "Plumber repairing a residential bathroom sink faucet.",
 
@@ -213,7 +213,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional plumbing leak repairs including leaking pipes, fixtures, water lines, and emergency plumbing repairs throughout Philadelphia.",
 
-    image: "/images/services/leak-repairs.jpg",
+    image: "/plumbing-images/leak1.png",
 
     heroImageAlt: "Licensed plumber repairing a leaking copper water line.",
 
@@ -303,7 +303,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional water service repair and replacement throughout Philadelphia including underground water line repairs and complete service replacements.",
 
-    image: "/images/services/water-service.jpg",
+    image: "/plumbing-images/waterservice1.png",
 
     heroImageAlt:
       "Licensed plumber replacing an underground residential water service line.",
@@ -398,7 +398,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional water heater installation, repair, and replacement including gas, electric, and tankless water heaters throughout Philadelphia.",
 
-    image: "/images/services/water-heater.jpg",
+    image: "/plumbing-images/waterheater1.png",
 
     heroImageAlt:
       "New residential gas water heater professionally installed in a utility room.",
@@ -489,7 +489,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional whole-home water filtration system installation throughout Philadelphia including drinking water filtration and water quality solutions.",
 
-    image: "/images/services/water-filtration.jpg",
+    image: "/plumbing-images/waterfilter1.png",
 
     heroImageAlt:
       "Whole-home water filtration system professionally installed on a residential water line.",
@@ -580,7 +580,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional sewer and water excavation services including underground utility repairs, replacements, and new installations throughout Philadelphia.",
 
-    image: "/images/services/excavation.jpg",
+    image: "/plumbing-images/excavation1.png",
 
     heroImageAlt:
       "Mini excavator exposing an underground residential water service line for replacement.",
@@ -671,7 +671,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional sump pump installation, repair, replacement, and battery backup systems throughout Philadelphia.",
 
-    image: "/images/services/sump-pump.jpg",
+    image: "/plumbing-images/sumppump1.png",
 
     heroImageAlt:
       "New residential sump pump installed inside a basement sump pit.",
@@ -762,7 +762,7 @@ export const services: Service[] = [
     metaDescription:
       "Professional plumbing rough-ins for residential and commercial construction projects throughout Philadelphia.",
 
-    image: "/images/services/new-construction.jpg",
+    image: "/plumbing-images/roughin1.png",
 
     heroImageAlt:
       "Licensed plumber installing rough-in water and drain piping during new construction.",
@@ -857,7 +857,7 @@ export const services: Service[] = [
     metaDescription:
       "Commercial plumbing services throughout Philadelphia including repairs, maintenance, tenant improvements, and plumbing system upgrades.",
 
-    image: "/images/services/commercial-plumbing.jpg",
+    image: "/plumbing-images/commercial.png",
 
     heroImageAlt:
       "Commercial plumber servicing plumbing equipment inside a commercial building.",
