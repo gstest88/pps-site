@@ -10,6 +10,14 @@ import { services } from "@/lib/data/services";
 import { routes } from "@/lib/routes";
 import { site } from "@/lib/config/site";
 import Navbar from "../components/layout/Navbar";
+import type { Metadata } from "next";
+import Footer from "../components/layout/Footer";
+
+export const metadata: Metadata = {
+  title: "Plumbing Services",
+  description:
+    "Explore our residential and commercial plumbing services in Philadelphia, including drain cleaning, water heater installation, leak repairs, water service replacement, excavation, sump pumps, and more.",
+};
 
 export default function ServicesPage() {
   return (
@@ -35,9 +43,11 @@ export default function ServicesPage() {
             </p>
 
             <div className="mt-12 flex flex-wrap justify-center gap-4">
-              <Button>Request Service</Button>
+              <Button href="/contact#request-service">Request Service</Button>
 
-              <Button variant="secondary">{site.phone}</Button>
+              <Button href={`tel: ${site.phone}`} variant="secondary">
+                {site.phone}
+              </Button>
             </div>
           </div>
         </Container>
@@ -89,6 +99,7 @@ export default function ServicesPage() {
           </div>
         </Container>
       </Section>
+      <Footer />
     </>
   );
 }

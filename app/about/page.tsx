@@ -11,9 +11,9 @@ import AboutValues from "../components/about/AboutValues";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Philadelphia Plumbing Services",
+  title: "About Us",
   description:
-    "Learn more about Philadelphia Plumbing Services and our commitment to honest, dependable plumbing throughout Philadelphia.",
+    "Learn about Philadelphia Plumbing Services, our commitment to honest workmanship, dependable service, and quality residential and commercial plumbing throughout Philadelphia.",
 };
 
 export default function AboutPage() {

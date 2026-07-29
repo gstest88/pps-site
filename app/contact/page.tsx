@@ -8,12 +8,12 @@ import ContactCards from "@/app/components/contact/ContactCards";
 
 import ContactServiceArea from "@/app/components/contact/ContactServiceArea";
 import ContactCTA from "@/app/components/contact/ContactCTA";
-import RequestServiceForm from "@/app/components/about/RequestServiceForm";
+import RequestServiceForm from "@/app/components/contact/RequestServiceForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Philadelphia Plumbing Services",
+  title: "Contact Us",
   description:
-    "Contact Philadelphia Plumbing Services to schedule plumbing repairs, drain cleaning, water heater installation, excavation, and more throughout Philadelphia.",
+    "Contact Philadelphia Plumbing Services to schedule residential and commercial plumbing, drain cleaning, water heater services, leak repairs, excavation, and more throughout Philadelphia.",
 };
 
 export default function ContactPage() {
