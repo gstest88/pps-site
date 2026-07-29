@@ -5,23 +5,29 @@ export default function Logo() {
   return (
     <Link
       href="/"
+      aria-label="Philadelphia Plumbing Services"
       className="flex items-center gap-4 transition-opacity hover:opacity-90"
     >
       <Image
-        src="/logo/ppslogo.jpg"
-        alt="Philadelphia Plumbing Services"
-        width={56}
-        height={56}
+        src="/images/logo-icon.png"
+        alt=""
+        width={60}
+        height={60}
         priority
+        className="shrink-0"
       />
 
       <div className="leading-tight">
-        <p className="text-xl font-bold tracking-tight text-[#123B63]">
-          Philadelphia Plumbing Services
+        <p className="text-lg font-extrabold uppercase tracking-tight text-[#123B63]">
+          Philadelphia
         </p>
 
-        <p className="text-sm text-slate-500">
-          Licensed • Insured • Trusted
+        <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#005A9C]">
+          Plumbing Services
+        </p>
+
+        <p className="text-[10px] uppercase tracking-[0.15em] text-slate-500">
+          Licensed • Insured
         </p>
       </div>
     </Link>

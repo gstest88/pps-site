@@ -1,39 +1,43 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
-import Container from "../ui/Container";
-import Button from "../ui/Button";
-import { site } from "@/lib/config/site";
 import { routes } from "@/lib/routes";
+import { site } from "@/lib/config/site";
+
+import Button from "../ui/Button";
+import Container from "../ui/Container";
 
 export default function Footer() {
   return (
     <footer className="bg-linear-to-b from-[#123B63] to-[#0C2742] text-white">
       {/* CTA */}
       <div className="relative overflow-hidden">
-        {/* Blueprint Grid */}
         <div
           className="absolute inset-0 opacity-[0.05]"
           style={{
             backgroundImage: `
-                    linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px)
-                `,
+              linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px)
+            `,
             backgroundSize: "40px 40px",
           }}
         />
+
         <div
           className="absolute inset-0"
           style={{
             background: `
-            radial-gradient(circle at center,
+              radial-gradient(
+                circle at center,
                 rgba(255,255,255,.05),
-                transparent 65%)
-        `,
+                transparent 65%
+              )
+            `,
           }}
         />
+
         <Container>
-          <div className=" relative py-28 text-center">
+          <div className="relative py-28 text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-200">
               Ready To Get Started?
             </p>
@@ -51,7 +55,7 @@ export default function Footer() {
             </p>
 
             <div className="mt-12 flex flex-wrap justify-center gap-5">
-              <Button href={"/contact"}>Request Service</Button>
+              <Button href={routes.contact}>Request Service</Button>
 
               <Button variant="secondary">{site.phone}</Button>
             </div>
@@ -60,32 +64,44 @@ export default function Footer() {
       </div>
 
       {/* Divider */}
-
       <div className="relative">
-        {/* Line */}
-
         <div className="h-px bg-white/10" />
-
-        {/* Circle */}
 
         <div className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-[#123B63]" />
       </div>
 
-      {/* Footer */}
-
+      {/* Main footer */}
       <Container>
         <div className="grid gap-16 py-20 lg:grid-cols-[2fr_1fr_1fr_1fr]">
           {/* Company */}
-
           <div>
-            <Image
-              src="/images/logo/ppslogo.png"
-              alt={site.name}
-              width={260}
-              height={70}
-            />
+            <div className="relative isolate w-full max-w-[420px]">
+              {/* Soft brightness burst */}
+              <div
+                aria-hidden
+                className="pointer-events-none absolute -inset-x-10 -inset-y-6 z-0 rounded-full blur-3xl"
+                style={{
+                  background: `
+      radial-gradient(
+        ellipse at center,
+        rgba(255,255,255,.10) 0%,
+        rgba(255,255,255,.05) 45%,
+        transparent 80%
+      )
+    `,
+                }}
+              />
 
-            <p className="mt-8 max-w-md leading-8 text-blue-100">
+              <Image
+                src="/images/no_bg_dark_logo_horizontal.png"
+                alt={site.name}
+                width={420}
+                height={120}
+                className="relative z-10 block h-auto w-full"
+              />
+            </div>
+
+            <p className="-mt-5 max-w-md leading-8 text-blue-100">
               Professional residential and commercial plumbing services
               throughout Philadelphia. From routine repairs to complex
               excavation and water service replacement, we&apos;re committed to
@@ -94,7 +110,6 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-
           <div>
             <h3 className="text-lg font-semibold">Services</h3>
 
@@ -103,7 +118,7 @@ export default function Footer() {
                 <li key={service.title}>
                   <Link
                     href={routes.services.detail(service.slug)}
-                    className="text-blue-100 transition hover:text-white"
+                    className="text-blue-100 transition-colors hover:text-white"
                   >
                     {service.title}
                   </Link>
@@ -113,7 +128,6 @@ export default function Footer() {
           </div>
 
           {/* Company */}
-
           <div>
             <h3 className="text-lg font-semibold">Company</h3>
 
@@ -122,7 +136,7 @@ export default function Footer() {
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className="text-blue-100 transition hover:text-white"
+                    className="text-blue-100 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -132,20 +146,16 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-
           <div>
             <h3 className="text-lg font-semibold">Contact</h3>
 
             <div className="mt-6 space-y-5 text-blue-100">
               <p>{site.phone}</p>
-
               <p>{site.email}</p>
-
               <p>{site.address}</p>
 
               <div className="pt-4">
-                <p>Licensed & Insured</p>
-
+                <p>Licensed &amp; Insured</p>
                 <p>Certified Master Plumber</p>
               </div>
             </div>
@@ -154,7 +164,6 @@ export default function Footer() {
       </Container>
 
       {/* Bottom */}
-
       <div className="border-t border-white/10">
         <Container>
           <div className="flex flex-col items-center justify-between gap-4 py-8 text-sm text-blue-300 md:flex-row">
