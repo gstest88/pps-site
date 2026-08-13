@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { site } from "../lib/config/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
 
-    sitemap: "https://philadelphiaplumbingservices.com/sitemap.xml",
+    sitemap: `${site.url}/sitemap.xml`,
   };
 }

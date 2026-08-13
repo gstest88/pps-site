@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { site } from "@/lib/config/site";
 
 import "./globals.css";
 
@@ -11,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pps-site-ruby.vercel.app/"),
-  // metadataBase: new URL("https://philadelphiaplumbingservices.com"),
+  // metadataBase: new URL(site.url),
 
   title: {
     default: "Philadelphia Plumbing Services",

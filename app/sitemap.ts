@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 
 import { services } from "@/lib/data/services";
+import { site } from "@/lib/config/site";
 
-const BASE_URL = "https://philadelphiaplumbingservices.com";
+const BASE_URL = site.url;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
