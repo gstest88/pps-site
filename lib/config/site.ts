@@ -2,36 +2,35 @@ import { navigation } from "../data/navigation";
 import { services } from "../data/services";
 
 export const site = {
-    name: "Philadelphia Plumbing Services",
+  name: "Philadelphia Plumbing Services",
 
+  company: {
+    legalName: "Philadelphia Plumbing Services LLC",
+    brandName: "Philadelphia Plumbing Services",
+  },
 
-    company: {
-        legalName: "Philadelphia Plumbing Services LLC",
-        brandName: "Philadelphia Plumbing Services",
-    },
+  url: "https://phillyplumbingservices.com",
 
-    url: "https://philadelphiaplumbingservices.com",
+  shortName: "PPS",
 
-    shortName: "PPS",
+  phone: "(267) 658-2239",
 
-    phone: "(215) 555-1234",
+  email: "info@phillyplumbingservices.com",
 
-    email: "info@philadelphiaplumbingservices.com",
+  address: "Philadelphia, PA",
 
-    address: "Philadelphia, PA",
+  navigation,
 
-    navigation,
+  services,
 
-    services,
+  serviceArea: "Philadelphia",
 
-    serviceArea: "Philadelphia",
+  state: "PA",
 
-    state: "PA",
+  country: "US",
 
-country: "US",
-
-    socials: {
-        facebook: "",
-        google: "",
-    },
+  socials: {
+    facebook: "",
+    google: "",
+  },
 } as const;
