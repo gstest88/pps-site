@@ -1,6 +1,8 @@
 import { navigation } from "../data/navigation";
 import { services } from "../data/services";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 export const site = {
   name: "Philadelphia Plumbing Services",
 
@@ -9,7 +11,9 @@ export const site = {
     brandName: "Philadelphia Plumbing Services",
   },
 
-  url: "https://phillyplumbingservices.com",
+  url: isProduction
+    ? "https://www.phillyplumbingservices.com"
+    : "http://localhost:3000",
 
   shortName: "PPS",
 
