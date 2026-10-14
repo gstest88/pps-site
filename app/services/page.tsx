@@ -45,7 +45,7 @@ export default function ServicesPage() {
             <div className="mt-12 flex flex-wrap justify-center gap-4">
               <Button href="/contact#request-service">Request Service</Button>
 
-              <Button href={`tel: ${site.phone}`} variant="secondary">
+              <Button href={site.phoneHref} variant="secondary">
                 {site.phone}
               </Button>
             </div>

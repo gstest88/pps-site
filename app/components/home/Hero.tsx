@@ -34,7 +34,7 @@ export default function Hero() {
             </div>
 
             <div className="mt-12 flex flex-wrap gap-4 ">
-              <Button href={routes.contact}>Request Service</Button>
+              <Button href={site.phoneHref}>Request Service</Button>
 
               <Button variant="outline">Call {site.phone}</Button>
             </div>

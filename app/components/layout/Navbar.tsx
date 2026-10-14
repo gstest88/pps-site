@@ -34,9 +34,12 @@ export default function Navbar() {
               Call Today
             </p>
 
-            <p className="whitespace-nowrap font-semibold text-[#123B63]">
+            <a
+              href={site.phoneHref}
+              className="whitespace-nowrap font-semibold text-[#123B63]"
+            >
               {site.phone}
-            </p>
+            </a>
           </div>
 
           <Button href={routes.contact}>Request Service</Button>

@@ -22,13 +22,13 @@ export default function ServiceCallout() {
               </h2>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-                Whether you&apos;re dealing with a clogged drain, replacing a water
-                heater, or installing a new water service, we&apos;re committed to
-                providing dependable plumbing solutions throughout Philadelphia.
+                Whether you&apos;re dealing with a clogged drain, replacing a
+                water heater, or installing a new water service, we&apos;re
+                committed to providing dependable plumbing solutions throughout
+                Philadelphia.
               </p>
 
               <div className="mt-8 space-y-4">
-
                 <div className="flex items-center gap-3">
                   <ShieldCheck className="text-blue-300" size={20} />
                   <span>Licensed &amp; Insured</span>
@@ -43,22 +43,19 @@ export default function ServiceCallout() {
                   <Building2 className="text-blue-300" size={20} />
                   <span>Residential &amp; Commercial Service</span>
                 </div>
-
               </div>
             </div>
 
             <div className="flex flex-col gap-4 lg:items-end">
-
-              <Button>
+              <Button href={site.phoneHref} variant="primary">
                 Request Service
               </Button>
 
-              <Button variant="secondary">
+              <Button href={site.phoneHref} variant="secondary">
                 <Phone size={18} className="mr-2" />
 
                 {site.phone}
               </Button>
-
             </div>
           </div>
         </div>

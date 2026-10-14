@@ -18,6 +18,7 @@ export const site = {
   shortName: "PPS",
 
   phone: "(267) 658-2239",
+  phoneHref: "tel:+12676582239",
 
   email: "info@phillyplumbingservices.com",
 
